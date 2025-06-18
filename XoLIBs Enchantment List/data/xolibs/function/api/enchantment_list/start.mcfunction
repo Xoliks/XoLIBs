@@ -1,8 +1,8 @@
 # turn an enchantments compound into a list of enchantments
 # input is: minecraft:xolibs:enchantment_list in
 # output is: minecraft:xolibs:enchantment_list out
-# example input: {"minecraft:fire_protection": 3, "minecraft:aqua_affinity": 1, "minecraft:fortune": 1}
-# example output: 
+# example input: {"minecraft:efficiency": 4, "minecraft:silk_touch": 1, "minecraft:unbreaking": 3}
+# example output: [{lvl: "4", id: "minecraft:efficiency"}, {lvl: "1", id: "minecraft:silk_touch"}, {lvl: "3", id: "minecraft:unbreaking"}]
 
 scoreboard objectives add xolibs dummy
 function xolibs:sub/enchantment_list/listify with storage xolibs:enchantment_list

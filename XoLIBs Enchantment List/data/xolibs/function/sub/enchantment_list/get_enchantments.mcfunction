@@ -1,5 +1,5 @@
 # end this loop if there are no more enchantments
-execute if data storage xolibs:enchantment_list temp{string_copy:'}'} run return fail
+execute if data storage xolibs:enchantment_list temp{string:''} run return fail
 
 # get the enchantment id
 scoreboard players set enchantment_list.index xolibs 0
@@ -12,13 +12,10 @@ data modify storage xolibs:enchantment_list temp.string_copy set string storage 
 
 # get enchantment level
 scoreboard players set enchantment_list.index xolibs 0
-function xolibs:sub/enchantment_list/find_comma
-execute store result storage xolibs:enchantment_list temp.index_end int 1 run scoreboard players remove enchantment_list.index xolibs 1
-function xolibs:sub/enchantment_list/get_lvl with storage xolibs:enchantment_list temp
-function xolibs:sub/enchantment_list/cast_level_to_int with storage xolibs:enchantment_list temp.enchantment
-
-data modify storage xolibs:enchantment_list temp.string set string storage xolibs:enchantment_list temp.string_copy 2
-data modify storage xolibs:enchantment_list temp.string_copy set string storage xolibs:enchantment_list temp.string_copy 2
+function xolibs:sub/enchantment_list/get_lvl with storage xolibs:enchantment_list temp.enchantment
+function xolibs:sub/enchantment_list/find_quotes
+data modify storage xolibs:enchantment_list temp.string set string storage xolibs:enchantment_list temp.string_copy 1
+data modify storage xolibs:enchantment_list temp.string_copy set string storage xolibs:enchantment_list temp.string_copy 1
 
 # append to list
 data modify storage xolibs:enchantment_list out append from storage xolibs:enchantment_list temp.enchantment
