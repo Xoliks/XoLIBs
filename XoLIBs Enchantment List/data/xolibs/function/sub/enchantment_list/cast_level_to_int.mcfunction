@@ -1,0 +1,1 @@
+$data modify storage minecraft:xolibs:enchantment_list temp.enchantment.lvl set value $(lvl)i

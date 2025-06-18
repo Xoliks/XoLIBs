@@ -1,0 +1,6 @@
+{
+  "pack": {
+    "description": "XoLIBs: library for converting enchantments and stored_enchantments to a list",
+    "pack_format": 80
+  }
+}

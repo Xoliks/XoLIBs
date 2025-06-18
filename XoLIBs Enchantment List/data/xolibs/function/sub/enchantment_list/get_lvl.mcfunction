@@ -1,0 +1,1 @@
+$data modify storage xolibs:enchantment_list temp.enchantment.lvl set string storage xolibs:enchantment_list temp.string 0 $(index_end)
