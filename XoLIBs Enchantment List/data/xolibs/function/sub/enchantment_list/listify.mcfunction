@@ -7,3 +7,4 @@ data modify storage xolibs:enchantment_list temp.string_copy set from storage xo
 function xolibs:sub/enchantment_list/get_enchantments
 
 data remove storage xolibs:enchantment_list temp
+scoreboard players reset enchantment_list.index xolibs
