@@ -3,4 +3,4 @@ data modify storage xolibs:enchantment_list temp.character set string storage xo
 execute if data storage xolibs:enchantment_list temp{character:'"'} run return 0
 execute if data storage xolibs:enchantment_list temp{character:'}'} run return 0
 data modify storage xolibs:enchantment_list temp.string_copy set string storage xolibs:enchantment_list temp.string_copy 1
-function xolibs:sub/enchantment_list/find_quotes
+function xolibs:enchantment_list/sub/find_quotes

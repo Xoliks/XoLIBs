@@ -5,4 +5,4 @@
 # example output: [{lvl: "4", id: "minecraft:efficiency"}, {lvl: "1", id: "minecraft:silk_touch"}, {lvl: "3", id: "minecraft:unbreaking"}]
 
 scoreboard objectives add xolibs dummy
-function xolibs:sub/enchantment_list/listify with storage xolibs:enchantment_list
+function xolibs:enchantment_list/sub/listify with storage xolibs:enchantment_list
