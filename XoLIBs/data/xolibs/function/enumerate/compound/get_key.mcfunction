@@ -1,0 +1,1 @@
+$data modify storage xolibs:temp enumerate.compound.key set string storage xolibs:temp enumerate.string 0 $(character_index)

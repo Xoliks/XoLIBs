@@ -1,1 +1,0 @@
-$data modify storage xolibs:enchantment_list temp.enchantment.lvl set from storage xolibs:enchantment_list in.$(id)
