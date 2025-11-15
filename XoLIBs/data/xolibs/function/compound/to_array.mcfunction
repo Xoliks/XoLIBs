@@ -32,8 +32,8 @@ $data modify storage xolibs:temp compound.to_array.in set from storage $(compoun
 function xolibs:compound/to_array/key_loop
 $data modify storage $(compound) set from storage xolibs:temp compound.to_array.out
 
-scoreboard players reset character_index xolibs.temp
-scoreboard players reset backslash_count xolibs.temp
-data remove storage xolibs:temp compound.to_array
+#scoreboard players reset character_index xolibs.temp
+#scoreboard players reset backslash_count xolibs.temp
+#data remove storage xolibs:temp compound.to_array
 
 $return run execute if data storage $(compound)[]
