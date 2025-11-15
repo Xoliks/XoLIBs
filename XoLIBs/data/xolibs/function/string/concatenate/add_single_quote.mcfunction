@@ -1,0 +1,1 @@
+$data modify storage xolibs:temp string_concatenate.entry set value '\$(entry)'

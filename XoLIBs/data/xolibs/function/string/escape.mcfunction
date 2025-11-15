@@ -16,13 +16,13 @@
 #
 #>Example:
 #   data modify storage my_storage:data my_data set value {foo:"bar"}
-#   function xolibs:compound/to_array {data: "my_storage:data my_data"}
+#   function xolibs:string/escape {data: "my_storage:data my_data"}
 #   data get storage my_storage:data my_data
 #   ↳ '{foo:"bar"}'
-#   function xolibs:compound/to_array {data: "my_storage:data my_data"}
+#   function xolibs:string/escape {data: "my_storage:data my_data"}
 #   data get storage my_storage:data my_data
 #   ↳ "'{foo:\"bar\"}'"
-#   function xolibs:compound/to_array {data: "my_storage:data my_data"}
+#   function xolibs:string/escape {data: "my_storage:data my_data"}
 #   data get storage my_storage:data my_data
 #   ↳ '"\'{foo:\\"bar\\"}\'"'
 
