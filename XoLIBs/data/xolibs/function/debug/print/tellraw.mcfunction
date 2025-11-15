@@ -1,0 +1,1 @@
+$tellraw @a {text:$(escaped),color:"gray",click_event:{action:"copy_to_clipboard",value:$(escaped)},hover_event:{action:"show_text",value:{translate:"chat.copy.click"}}}

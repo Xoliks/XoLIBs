@@ -28,15 +28,14 @@
 
 scoreboard objectives add xolibs.temp dummy
 scoreboard players reset string_escape xolibs.temp
-scoreboard players set constant_2 xolibs.temp 2
 data remove storage xolibs:temp string_escape
 
 $execute unless data storage $(data) run return fail
 $data modify storage xolibs:temp string_escape.data set from storage $(data)
 
 execute store success score string_escape xolibs.temp run data modify storage xolibs:temp string_escape.string set string storage xolibs:temp string_escape.data
-execute if score string_escape xolibs.temp matches 1.. run execute summon item_display run function xolibs:string/escape/string
-execute if score string_escape xolibs.temp matches 0 run execute summon item_display run function xolibs:string/escape/data
+execute if score string_escape xolibs.temp matches 1.. in minecraft:overworld positioned 0 -1000 0 summon item_display run function xolibs:string/escape/string
+execute if score string_escape xolibs.temp matches 0 in minecraft:overworld positioned 0 -1000 0 summon item_display run function xolibs:string/escape/data
 
 $data modify storage $(data) set from storage xolibs:temp string_escape.out
 

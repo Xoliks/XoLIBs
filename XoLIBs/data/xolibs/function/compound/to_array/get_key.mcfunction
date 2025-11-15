@@ -1,1 +1,1 @@
-$data modify storage xolibs:temp compound.to_array.compound.key set string storage xolibs:temp compound.to_array.string 0 $(character_index)
+$data modify storage xolibs:temp compound_to_array.compound.key set string storage xolibs:temp compound_to_array.string 0 $(character_index)
